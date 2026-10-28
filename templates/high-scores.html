@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    High-Scores
+{% endblock %}
+
+{% block main %}
+    <p class="lavender-text center">HIGH SCORES</p>
+    <p class="white-text center">YOUR HIGH SCORE: {{ your_highscore | format_number }}</p>
+
+    <form action="/high-scores" method="post">
+        <table class="info-table table-border">
+            <tr class="table-border">
+                <th>#</th>
+                <th class="padding">NAME</th>
+                <th>SCORE</th>
+                <th>LV</th>
+            </tr>
+            {% for i in range(10) %}
+                <tr class="center">
+                    <td>{{ i + 1 }}</td>
+                    {% if i < highscores|length %}
+                        <td>{{ highscores[i].username }}</td>
+                        <td>{{ highscores[i].highscore | format_number }}</td>
+                        <td>{{ (highscores[i].highscore / 5) | int }}</td>
+                    {% else %}
+                        <td>–</td>
+                        <td>–</td>
+                        <td>–</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        </table>
+    </form>
+{% endblock %}

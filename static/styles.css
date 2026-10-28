@@ -1,0 +1,167 @@
+h1 {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 2px 2px 0 black, 4px 4px 5px #DAC2FF;
+    font-family: Futura, Georgia;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: Futura, Georgia;
+}
+
+.top-left-right-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left, .right {
+    /* Add any additional styling here */
+}
+
+.white-text {
+    color: white;
+    font-family: Futura, Georgia;
+}
+.lavender-text {
+    color: #DAC2FF;
+    font-family: Futura, Georgia;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    margin: 10px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #DAC2FF;
+    font-family: Futura, Georgia;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #DAC2FF;
+}
+
+body {
+    background-color: black;
+}
+
+.box1 {
+    border: 3px solid #DAC2FF;
+    width: 14rem;
+    margin: 1rem auto 1rem auto;
+}
+
+.box2 {
+    border: 3px solid #DAC2FF;
+    width: 2rem;
+    margin: 1rem auto 1rem auto;
+}
+
+input {
+    background-color: black;
+    font-size: inherit;
+    font-family: Futura, Georgia;
+    color: white;
+}
+
+.btn1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: inherit;
+    font-family: Futura, Georgia;
+}
+
+.btn2 {
+    font-size: inherit;
+    font-family: Futura, Georgia;
+}
+
+table {
+    color: white;
+    font-family: Futura, Georgia;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-table {
+    border-spacing: 1rem;
+}
+
+.info-table {
+    width: 70%;
+}
+
+.table-border {
+    border: 2px solid #DAC2FF;
+    border-collapse: collapse;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+.error {
+    color: red;
+    font-family: Futura, Georgia;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.block {
+    text-align: justify;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.top-spacing {
+    margin-top: 2rem;
+}
+
+.padding {
+    padding: 1rem 0rem;
+}
+
+.fade {
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.fade.in {
+    opacity: 1;
+}

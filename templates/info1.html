@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Information
+{% endblock %}
+
+{% block main %}
+    <p class="lavender-text center">INFORMATION</p>
+
+    <table class="info-table table-border">
+        <tr>
+            <th class="table-border"><p class="white-text center">WHAT IS THE BINARY SYSTEM</p></th>
+        </tr>
+        <tr>
+            <td class="table-border"><p class="white-text block">The binary system is a numeral system that uses only two different symbols to represent numbers.
+                The decimal system, which we use most of the time, uses ten different symbols, 0 through 9. The binary system uses only the symbols 0 and 1.
+                The place value of each digit is the power of two of the corresponding place. The digit with the highest value is on the left and the digit with the lowest value is on the right.
+                The value of a binary number is the sum of the powers of two represented by each digit with the symbol 1.</p>
+
+                <p class="white-text block">For example, the binary number 1011 can be written as 1*2<sup>3</sup> + 0*2<sup>2</sup> + 1*2<sup>1</sup> + 1*2<sup>0</sup>, which is the decimal number 11.</p></td>
+        </tr>
+    </table>
+
+{% endblock %}

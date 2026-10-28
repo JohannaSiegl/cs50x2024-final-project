@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <title>BINARY {% block title %}{% endblock %}</title>
+
+        <link href="/static/styles.css" rel="stylesheet">
+        <link href="/static/dragon.png" rel="icon">
+
+    </head>
+
+    <body>
+
+        <main class="container py-5 text-center">
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer>
+            {% block footer %}{% endblock %}
+            {% if not is_index %}
+                {% include 'footer.html' %}
+            {% endif %}
+        </footer>
+
+    </body>
+
+</html>

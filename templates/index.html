@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <div class="top-left-right-text">
+        <div class="left"><p class="lavender-text">{{ your_username }}</p></div>
+        <div><p class="lavender-text">HIGH SCORE: {{ your_highscore | format_number }}</p></div>
+        <div class="right"><p class="lavender-text">SCORE: {{ global_score | format_number }}</p></div>
+    </div>
+
+    <h1>BINARY</h1>
+
+    <nav>
+        <div>
+            {% if session["user_id"] %}
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="/start">START GAME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/info">INFORMATION</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/high-scores">HIGH SCORES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/password">CHANGE PLAYER</a></li>
+                </ul>
+            {% else %}
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="/start">START GAME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/info">INFORMATION</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/high-scores">HIGH SCORES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/password">USER ACCOUNT</a></li>
+                </ul>
+            {% endif %}
+        </div>
+    </nav>
+
+{% endblock %}
+
+{% block footer %}
+    <p class="white-text center">© 2024 J. SIEGL</p>
+{% endblock %}
